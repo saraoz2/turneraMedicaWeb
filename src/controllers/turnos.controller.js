@@ -23,7 +23,9 @@ export const getTurnoId = async (req, res)=> {
 
         res.json(rows[0])
     } catch (error) {
-        
+        return res.status(500).json({
+        message: 'Algo va mal!!'
+       }) 
     }
 }
 
@@ -39,7 +41,9 @@ export const getTurnosPaciente = async (req, res)=> {
 
         res.json(rows[0])
     } catch (error) {
-        
+        return res.status(500).json({
+        message: 'Algo va mal!!'
+       }) 
     }
 }
 
