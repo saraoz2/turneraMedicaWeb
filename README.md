@@ -1,5 +1,8 @@
 # TurneraMedicaWeb
 version web del proyecto de LAB1
+puerto para express 3000 y puerto para sql 3306
+CABE ACLARAR QUE DEBERIA PASAR POR VARIABLES DE ENTORNO los valores de `db.js` pero a modo de prueba los dejo
+NO SE DEBE HACER ES PELIGROSO
 
 ## Indice
 * Medico
@@ -79,3 +82,6 @@ un turno necesita un paciente y un medico
 * `put('/turno/:id', updateTurno)`
 * `patch('/turno/:id', updatePatchTurno)`
 * `delete('/turno/:id', deleteTurno)`
+
+## SQL
+deje en la carpeta DB los ddl para crear las tablas y tambien para ya cargar datos.
