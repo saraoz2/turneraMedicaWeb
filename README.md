@@ -16,7 +16,7 @@ haciendo que quede
 una ruta que me gustaria destacar es
 `get('/turno/paciente/:id', getTurnosPaciente)`
 ya que permite mostrar los turnos de un paciente, faltaria hacer que se filtre por las pendientes.
-![captura 1](ruta_turno_paciente.png)
+![captura 1](ruta_turno_paciente_id.PNG)
 ## Paciente
 clase para representar a los que van a ser atendidos
 ### Atributos
