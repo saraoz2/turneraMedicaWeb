@@ -39,7 +39,11 @@ export const getTurnosPaciente = async (req, res)=> {
             message: 'medico no encontrado'
         })
 
-        res.json(rows[0])
+        res.json(rows)
+        /*aca habria que implementar con alguna libreria o el mismo express compare el campo fecha_hora
+        haciendo que solo mostrase las que son mayores a la fecha actual, de este modo solo tendrias las
+        los turnos pendientes.
+        */
     } catch (error) {
         return res.status(500).json({
         message: 'Algo va mal!!'
