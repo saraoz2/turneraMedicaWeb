@@ -27,10 +27,14 @@ clase para representar a los que van a ser atendidos
 * dni
 * fecha_nac
 ### Metodos
-* `crearPaciente()`
-* `eliminarPaciente()`
-* `consultarPaciente()`
-* `actualizarPaciente()`
+* `get('/paciente', getPacientes)`
+* `get('/paciente/:id', getPaciente)`
+* `post('/paciente', createPaciente)`
+* `put('/paciente/:id', updatePaciente)`
+* `patch('/paciente/:id', updatePatchPaciente)`
+* `delete('/paciente/:id', deletePaciente)`
+
+
 ## Medico
 clase para representar a los que van a atender personas
 ### atributos
@@ -50,3 +54,10 @@ un turno necesita un paciente y un medico
 * id_medico
 * fecha_Hora
 ### metodos
+* `get('/turno', getTurnosAll)`
+* `get('/turno/:id', getTurnoId)`
+* `get('/turno/paciente/:id', getTurnosPaciente)`
+* `post('/turno', createTurno)`
+* `put('/turno/:id', updateTurno)`
+* `patch('/turno/:id', updatePatchTurno)`
+* `delete('/turno/:id', deleteTurno)`
