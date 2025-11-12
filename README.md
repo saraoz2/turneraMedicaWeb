@@ -17,6 +17,18 @@ una ruta que me gustaria destacar es
 `get('/turno/paciente/:id', getTurnosPaciente)`
 ya que permite mostrar los turnos de un paciente, faltaria hacer que se filtre por las pendientes.
 ![captura 1](ruta_turno_paciente_id.PNG)
+tambien paso capturas de los distntos crud
+* `get('/paciente', getPacientes)`
+![captura 2](Captura2.PNG)
+* `post('/medico', createMedico)`
+![captura 3](Captura3.PNG)
+* `put('/paciente/:id', updatePaciente)`
+![captura 4](Captura4.PNG)
+* hice un manejo de rutas errores para que no se caiga el servidor indicando que la ruta es erronea
+![captura 5](Captura5.PNG)
+
+
+
 ## Paciente
 clase para representar a los que van a ser atendidos
 ### Atributos
