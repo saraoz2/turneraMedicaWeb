@@ -2,14 +2,13 @@
 version web del proyecto de LAB1
 
 ## Indice
-* Usuario
-  * Medico
-  * paciente
+* Medico
+* paciente
 * Turno
   
 
 
-## Usuario
+## Rutas
 todos los tipos de usuario
 ### Atributos
 * id
@@ -21,7 +20,12 @@ todos los tipos de usuario
 ## Paciente
 clase para representar a los que van a ser atendidos
 ### Atributos
+* id
+* nombre
+* apellido
+* telefono
 * dni
+* fecha_nac
 ### Metodos
 * `crearPaciente()`
 * `eliminarPaciente()`
@@ -30,17 +34,19 @@ clase para representar a los que van a ser atendidos
 ## Medico
 clase para representar a los que van a atender personas
 ### atributos
-* patente
-* tarifa
+* id
+* nombre
+* apellido
+* telefono
+* matricula
+* correo
 ### metodos
 
 ## Turno
 un turno necesita un paciente y un medico
 ### atributos
-* fecha
-* hora
-* paciente
-* medico
-* consultorio
-* precioFinal
+* id
+* id_paciente
+* id_medico
+* fecha_Hora
 ### metodos
